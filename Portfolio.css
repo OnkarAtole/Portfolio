@@ -1,0 +1,351 @@
+ html,
+    body {
+      margin: 0;
+     
+      background: #0b0f14;
+      scroll-behavior: smooth;
+      color: white;
+      padding-left: 100px;
+      padding-right: 100px;
+      
+    }
+#header{
+    position: sticky;
+  top: 0;   
+    background-color: #0a0f15;
+    border-bottom: 1px solid rgba(255, 255, 255, .06);
+     opacity:1;
+     z-index: 1000;
+    
+}
+#name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#icon{
+   margin:4px;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically */
+}
+#container{
+    display: flex;
+   min-height: 40px;
+   padding: 4px;
+}
+nav{
+  margin-left: 3rem;
+  
+}
+nav ul{
+    
+    display: flex;              
+  list-style: none;                           
+  justify-content: center;    
+  align-items: center;        
+  gap: 4rem;                 
+}
+nav ul li a{
+   color: white;
+   text-decoration: none;
+}
+
+/* section info */
+#info{
+ 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:50px
+  
+}
+#info #infocard1{
+  padding: 10px;
+  /* margin: 10px; */
+  gap: 10px;
+  border-radius:13px;
+      border-bottom: 1px solid rgba(255, 255, 255, .06);
+}
+#info #infocard2{
+  background-color: #18263f;
+ 
+  border-bottom: 1px solid rgba(255, 255, 255, .06);
+  /* padding: 10px; */
+  margin: 10px;
+   
+
+}
+
+.tags span{
+      border: 1px solid rgba(255, 255, 255, .06);
+      border-radius: 5px;
+      margin-right: 12px;
+      height: 10px;
+}
+#infocard2 #cardgrid{
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:1fr 1fr ;
+  gap: 10px; */
+  
+  display: grid;
+  background-color:#18263f;
+  grid-template-columns: repeat(2, 1fr);  /* ✅ 2 columns */
+  grid-template-rows: repeat(2, 1fr);     /* ✅ 2 rows */
+  gap:10px;
+  border:1px solid rgba(255, 255, 255, .06); 
+  margin: 1px auto;                      /* center the grid */
+          /* optional */
+   border-radius: 12px;
+  overflow: hidden;
+  padding: 20px;
+  max-width: 800px;
+  
+  
+  
+}
+
+#toolbox ul{
+ display: flex;               /* Places items in a line */
+  flex-wrap: wrap; 
+  gap: 13px;
+  list-style: none;
+}
+
+
+#infocard2 #cardgrid div{
+  border: 1px solid rgba(255, 255, 255, .06);
+    background-color: #0a0f15;    
+    border-radius: 8px;
+    padding-left: 10px;
+}
+#infocard1 #button{
+  display: flex;
+  flex-direction: row;
+   gap: 50px;
+  
+}
+#infocard1 #button a{
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, .06);
+  border-radius: 5px;
+  padding: 10px;
+  width: 40%;
+  background:linear-gradient(to top right,#397af3,#72a2ff);
+ 
+}
+
+/* about section  */
+#about{
+  padding-top: 4rem;
+  padding-bottom:3rem;
+  /* border:1px solid rgba(255, 255, 255, .06); */
+  border-radius: 5px;
+}
+
+/* skill section  */
+#skills{
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  /* border:1px solid rgba(255, 255, 255, .06); */
+  border-radius: 5px;
+}
+.skillcard{
+  display: flex;
+  flex-direction: row;
+  
+
+}
+
+.skillcard .skillbox{
+
+  border: 1px solid rgba(255, 255, 255, .06);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  gap: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  
+  
+}
+
+ .skillcard .skillbox .skill {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; 
+}
+
+.skillcard .skillbox .skill span {
+  display: inline-block;
+  font-size: 10px;
+  background: rgba(255,255,255,0.1);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+
+/* project section  */
+#project{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  
+}
+#project #projectcard{
+    display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap: 10px;
+} 
+ #projectcard #projectbox{
+   border: 1px solid rgba(255, 255, 255, .06);
+   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+   border-radius: 10px;
+   padding: 10px;
+   gap: 10px;
+ }
+  #projectbox span{
+     border: 1px solid rgba(255, 255, 255, .06);
+     padding: 2px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 3px;
+  }
+
+/* resume section  */
+
+#resume{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+#resumecard #resumebox{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  justify-content: center;
+  padding-top:3rem ;
+  padding-bottom: 3rem;
+ 
+}
+
+#resumebox a{
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, .06);
+ background:linear-gradient(to top right,rgb(54, 103, 239),rgb(120, 173, 239));
+ padding: 10px;
+ border-radius: 10px;
+ box-shadow: 10px 10px 20px rgb(4, 4, 4);
+ color: white;
+}
+#resumebox a:hover{
+transform: translateY(-3px);
+}
+
+
+
+/* contact */
+
+#contact{
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+#contact #contactcard{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, .06);
+  
+}
+
+#contactcard #contactbox{
+  background: rgba(255,255,255,0.1);
+  padding: 10px;
+  border-radius: 10px;
+}
+#contactbox a {
+  color: rgb(120, 173, 239);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+#contactbox a:hover {
+  color: rgb(54, 103, 239);
+  text-shadow: 0 0 10px rgba(120, 173, 239, 0.7);
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+input{
+  background-color: rgba(255,255,255,0.1);
+  line-height: 30px;
+  border-radius: 10px;
+  color: white;
+}
+textarea{
+  background-color: rgba(255,255,255,0.1);
+  line-height: 40px;
+  border-radius: 10px;
+   color: white;
+}
+button{
+    padding: 10px;  
+    border-radius: 10px;
+    background: linear-gradient(to top right,rgb(54, 103, 239),rgb(120, 173, 239));
+}
+@media(max-width:480px){
+  html,body{
+    padding:0;
+  }
+  #info{
+    display: inline-block;
+  }
+  #header nav ul{
+    
+    display: flex;              
+  list-style: none;                           
+  justify-content: center;    
+  align-items: center;        
+  gap: 1rem;                 
+}
+#name{
+  margin-right: 0px;
+}
+#header nav{
+  margin-left: 0px;
+}
+
+.skillcard{
+  display: flex;
+  flex-direction: column;
+}
+#project #projectcard{
+    display: flex;
+    flex-direction: column;
+  gap: 10px;
+} 
+
+#contact #contactcard{
+  display:flex;
+  flex-direction: column;
+
+  
+}
+  
+}
