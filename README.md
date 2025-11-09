@@ -6,7 +6,7 @@ Deployed seamlessly on Vercel for global accessibility.
 
 🚀 Live Demo
 
-🔗 Visit My Portfolio: https://onkaratoleportfolio.vercel.app/
+🔗 Visit My Portfolio: https://onkar-atole-portfolio.vercel.app/
 
 🧠 Overview
 
