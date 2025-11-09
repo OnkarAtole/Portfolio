@@ -17,6 +17,7 @@
      opacity:1;
      z-index: 1000;
     
+    
 }
 #name{
     display: flex;
@@ -309,6 +310,7 @@ button{
     border-radius: 10px;
     background: linear-gradient(to top right,rgb(54, 103, 239),rgb(120, 173, 239));
 }
+
 @media(max-width:480px){
   html,body{
     padding:0;
@@ -316,14 +318,86 @@ button{
   #info{
     display: inline-block;
   }
+ #name h2 {
+        font-size: 18px;
+      }
+      #icon {
+        width: 35px;
+        height: 35px;
+      }
   #header nav ul{
     
     display: flex;              
   list-style: none;                           
   justify-content: center;    
   align-items: center;        
-  gap: 1rem;                 
+  gap: 1rem;        
+   max-width: 100%;
+    padding: 0 20px;
+       
 }
+#container{
+  margin-right: 0;
+}
+#name{
+  margin-right: 0px;
+}
+#header nav{
+  margin-left: 0px;
+     
+}
+
+.skillcard{
+  display: flex;
+  flex-direction: column;
+}
+#project #projectcard{
+    display: flex;
+    flex-direction: column;
+  gap: 10px;
+} 
+
+#contact #contactcard{
+  display:flex;
+  flex-direction: column;
+
+  
+}
+  
+}
+
+
+@media(max-width:768px){
+  html,body{
+    padding:0;
+  }
+  #info{
+    display: inline-block;
+  }
+
+    #container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        display: grid;
+       /* grid-template-columns: ; */
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      nav ul li {
+        width: 100%;
+        text-align: left;
+      }
+
+      nav a {
+        display: block;
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
 #name{
   margin-right: 0px;
 }
@@ -349,3 +423,4 @@ button{
 }
   
 }
+
