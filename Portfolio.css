@@ -424,3 +424,36 @@ button{
   
 }
 
+
+
+
+
+
+
+
+
+/* 🌟 Slide-in from Left Animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply to entire main section */
+#main {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+
+ #header {
+  animation: slideInFromLeft 1s ease-out forwards;
+  animation-delay: 0.2s; 
+} 
+
+
+
