@@ -434,6 +434,43 @@ button{
 
 
 /* 🌟 Slide-in from Left Animation */
+/* 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+} */
+
+/* Apply to entire main section */
+/* 
+#main {
+  animation: slideInFromLeft 1s ease-out forwards;
+} */
+
+/* 
+ #header {
+  animation: slideInFromLeft 1s ease-out forwards;
+  animation-delay: 0.2s; 
+} 
+ */
+
+/* 🌟 Slide-in from Left Animation */
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -445,16 +482,17 @@ button{
   }
 }
 
-/* Apply to entire main section */
+/* Apply to header and main */
+#header,
 #main {
+  opacity: 0; /* Start hidden */
+  -webkit-animation: slideInFromLeft 1s ease-out forwards;
   animation: slideInFromLeft 1s ease-out forwards;
 }
 
-
- #header {
-  animation: slideInFromLeft 1s ease-out forwards;
-  animation-delay: 0.2s; 
-} 
+#header {
+  animation-delay: 0.2s;
+}
 
 
 
