@@ -5,9 +5,9 @@ It showcases my skills, projects, education, and contact details in a clean, use
 Deployed seamlessly on Vercel for global accessibility.
 
 🚀 Live Demo
+
 🔗 Visit My Portfolio:https://onkaratole.github.io/portfolio/
 
-🔗 Visit My Portfolio: https://onkar-atole-portfolio.vercel.app/
 
 🧠 Overview
 
